@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100&family=Roboto+Slab&family=Roboto:ital,wght@0,400;1,100&family=Ubuntu:ital@1&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container {
+    width: 1000px;
+    /* background-color: rgb(43, 35, 35);
+    margin-left: 40px; */
+}
+
+.top-features {
+    display: flex;
+    /* margin-left: 30px; */
+    /* width: 992px; */
+    background-color: rgb(43, 35, 35);
+    margin-left: 40px;
+    padding-left: 20px;
+    border-radius: 12px;
+}
+
+.feature {
+    color: white;
+    width: 50%;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+    font-weight: 700px;
+    background-color: crimson;
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+.feature img {
+    width: 80%;
+    margin-left: 100px;
+}
+
+
+/*
+-----------------------------
+match schedule design start 
+-----------------------------
+*/
+
+.blogs {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+.match-schedules {
+    margin-left: 10px;
+}
+
+.schedule {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.match-info {
+    /* border-radius: 20px; */
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.match-info button {
+    padding: 7px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+#blog-button {
+    background-color: red;
+}
+
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 40px;
+    border-radius: 10px;
+}
+
+.player {
+    width: 500px;
+    height: 320px;
+    background-color: rgb(236, 233, 228);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.player,
+img {
+    width: 100%;
+}
+
+
+/*
+----------------------------
+ Footer design start here
+---------------------------*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: lightgrey;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+hr {
+    background-color: rgb(65, 57, 57);
+    margin-bottom: 50px;
+}
+
+.nav-bar {
+    padding-bottom: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
