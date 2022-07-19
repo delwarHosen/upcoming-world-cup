@@ -16,18 +16,19 @@ h1 {
 }
 
 .top-features {
-    display: flex;
-    /* margin-left: 30px; */
-    /* width: 992px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
     background-color: rgb(43, 35, 35);
     margin-left: 40px;
     padding-left: 20px;
-    border-radius: 12px;
 }
 
 .feature {
+    margin-left: 20px;
     color: white;
-    width: 50%;
+    width: 400px;
+
 }
 
 .link-button {
@@ -35,14 +36,16 @@ h1 {
     color: white;
     font-weight: 700px;
     background-color: crimson;
-    padding: 5px 30px;
+    padding: 5px 20px;
     border-radius: 10px;
 }
 
 .feature img {
-    width: 80%;
-    margin-left: 100px;
+    width: 100%;
+
+    /* margin-left: 100px; */
 }
+
 
 
 /*
@@ -133,4 +136,68 @@ hr {
     text-decoration: none;
     color: white;
     margin: 20px;
+}
+
+/*----------------
+for Mobile view
+------------------
+ */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-features,
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .schedule {
+        background-color: rgb(144, 172, 162);
+    }
+
+    .feature {
+        margin: 15px;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .nav-bar a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ----------------------------
+For tablet
+------------------------------
+*/
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-features {
+        padding-bottom: 20px;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
