@@ -82,8 +82,6 @@ h1 {
     width: 90%;
 }
 
-
-
 /*
 -----------------------------
 match schedule design start 
@@ -157,7 +155,7 @@ img {
 }
 
 .card-icon span {
-    margin-left: 40px;
+    margin-left: 50px;
     color: gray;
 }
 
@@ -245,7 +243,7 @@ for Mobile view media query
 
     .player {
         flex-direction: column;
-        height: 400px;
+        height: 415px;
         margin-left: 0%;
     }
 
