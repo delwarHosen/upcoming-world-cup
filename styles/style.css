@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .container {
@@ -59,7 +59,7 @@ h1 {
 }
 
 .feature img {
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -81,6 +81,7 @@ match schedule design start
 }
 
 .schedule {
+    width: 170px;
     background-color: black;
     padding: 10px;
     border-radius: 15px;
@@ -88,22 +89,25 @@ match schedule design start
 
 .match-info {
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
+    background-color: rgb(231, 210, 182);
+    border-radius: 12px;
+    text-align: center;
 
 }
 
-.match-info button {
-    /* color: white;
-    text-decoration: none; */
+.match-info a {
+    color: white;
+    text-decoration: none;
     padding: 7px;
     width: 130px;
     border-radius: 10px;
 }
 
-#blog-button {
-    background-color: red;
+#blog-link {
+    background-color: crimson;
 }
-
 
 .players {
     display: grid;
@@ -198,12 +202,12 @@ for Mobile view media query
         align-items: center;
     }
 
-    .schedule {
-        background-color: rgb(144, 172, 162);
+    .feature {
+        width: 100%;
     }
 
-    .feature {
-        margin: 15px;
+    .schedule {
+        background-color: rgb(144, 172, 162);
     }
 
     .players {

@@ -1,0 +1,24 @@
+.player {
+    height: 200px;
+}
+
+.match-day {}
+
+.match-day img {
+    width: 95px;
+    height: 95px;
+
+}
+
+.match-info a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    width: 130px;
+    border-radius: 10px;
+
+}
+
+#blog-link {
+    background-color: crimson;
+}
