@@ -1,3 +1,7 @@
+/*----
+ google font link
+----
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100&family=Roboto+Slab&family=Roboto:ital,wght@0,400;1,100&family=Ubuntu:ital@1&display=swap');
 
 body {
@@ -11,10 +15,11 @@ h1 {
 
 .container {
     width: 1000px;
-    /* background-color: rgb(43, 35, 35);
-    margin-left: 40px; */
 }
 
+/* 
+ header section  design starts
+*/
 .top-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -23,6 +28,19 @@ h1 {
     margin-left: 40px;
     padding-left: 20px;
 }
+
+.animation {
+    transition: transform 5s;
+}
+
+.feature:hover,
+.animation {
+    transform: translate(0px, -20px);
+}
+
+/* .feature:hover {
+    color: brown;
+} */
 
 .feature {
     margin-left: 20px;
@@ -42,8 +60,6 @@ h1 {
 
 .feature img {
     width: 100%;
-
-    /* margin-left: 100px; */
 }
 
 
@@ -71,13 +87,14 @@ match schedule design start
 }
 
 .match-info {
-    /* border-radius: 20px; */
     margin-top: 20px;
     padding: 10px;
 
 }
 
 .match-info button {
+    /* color: white;
+    text-decoration: none; */
     padding: 7px;
     width: 130px;
     border-radius: 10px;
@@ -109,6 +126,23 @@ img {
     width: 100%;
 }
 
+.tablet-button {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+/* 
+tablet button
+*/
+.tablet-button button {
+    color: white;
+    font-weight: 700px;
+    background-color: crimson;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
 
 /*
 ----------------------------
@@ -138,8 +172,16 @@ hr {
     margin: 20px;
 }
 
+.icon a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 2em;
+}
+
 /*----------------
-for Mobile view
+for Mobile view media query
+
 ------------------
  */
 
@@ -171,6 +213,7 @@ for Mobile view
     .player {
         flex-direction: column;
         height: 400px;
+        margin-left: 0%;
     }
 
     .nav-bar a {
@@ -179,11 +222,15 @@ for Mobile view
         justify-content: center;
         align-items: center;
     }
+
+    .tablet-button {
+        display: none;
+    }
 }
 
 
 /* ----------------------------
-For tablet
+For tablet media query
 ------------------------------
 */
 
@@ -196,8 +243,29 @@ For tablet
         padding-bottom: 20px;
     }
 
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .players {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .player {
+        height: 400px;
+    }
+
+}
+
+/* 
+for desktop media query
+*/
+@media only screen and (min-width:993px) {
+    .tablet-button {
+        display: none;
+    }
 }
