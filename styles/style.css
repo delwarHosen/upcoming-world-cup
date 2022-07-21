@@ -10,11 +10,12 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .container {
     width: 1000px;
+    margin: 0 auto;
 }
 
 /* 
@@ -24,10 +25,10 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 100px;
-    background-color: rgb(43, 35, 35);
-    margin-left: 40px;
-    padding-left: 20px;
-    border-radius: 15px;
+    background-color: rgb(41, 36, 36);
+    margin-left: 30px;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 .animation {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .text-1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700px;
     letter-spacing: 3px;
     position: relative;
@@ -64,9 +65,14 @@ h1 {
 }
 
 .feature {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     color: white;
     width: 400px;
+}
+
+.feature h1,
+p {
+    padding-left: 50px;
 }
 
 .link-button {
@@ -76,6 +82,7 @@ h1 {
     background-color: crimson;
     padding: 5px 20px;
     border-radius: 10px;
+    margin-left: 50px;
 }
 
 .feature img {
@@ -90,7 +97,7 @@ match schedule design start
 
 .blogs {
     display: flex;
-    margin-left: 30px;
+    /* margin-left: 10px; */
     margin-top: 80px;
 }
 
@@ -116,7 +123,7 @@ match schedule design start
 }
 
 .match-info a {
-    color: white;
+    color: rgb(41, 31, 31);
     text-decoration: none;
     padding: 7px;
     width: 130px;
@@ -219,10 +226,12 @@ for Mobile view media query
 
     .top-features,
     .blogs {
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .feature {
@@ -234,7 +243,7 @@ for Mobile view media query
     }
 
     .schedule {
-        background-color: rgb(179, 206, 197);
+        background-color: rgb(216, 236, 230);
     }
 
     .players {
@@ -242,9 +251,10 @@ for Mobile view media query
     }
 
     .player {
+        background-color: rgb(229, 203, 203);
         flex-direction: column;
         height: 425px;
-        margin-left: 0%;
+        width: 300px;
     }
 
     .nav-bar a {
