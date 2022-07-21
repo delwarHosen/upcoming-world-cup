@@ -304,8 +304,14 @@ For tablet media query
 
     .schedule {
         display: flex;
-        width: 450px;
-        background-color: rgb(218, 204, 204);
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(78, 68, 68);
+    }
+
+    #blog-link {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .match-info {
