@@ -254,7 +254,7 @@ for Mobile view media query
     .player {
         background-color: rgb(229, 203, 203);
         flex-direction: column;
-        height: 425px;
+        height: 500px;
         width: 95%;
     }
 
