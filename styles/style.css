@@ -236,6 +236,7 @@ for Mobile view media query
 
     .feature {
         width: 100%;
+        text-align: center;
     }
 
     .feature img {
@@ -304,7 +305,7 @@ For tablet media query
     .schedule {
         display: flex;
         width: 450px;
-        background-color: rgb(171, 190, 171);
+        background-color: rgb(218, 204, 204);
     }
 
     .match-info {
@@ -316,7 +317,7 @@ For tablet media query
     }
 
     .player {
-        height: 400px;
+        height: 450px;
     }
 
 }
